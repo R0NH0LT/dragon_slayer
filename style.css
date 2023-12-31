@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: calc(100vh - 133px);
+    background-color: #000000;
+    background-image: url("photos/IMG_0181.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 100px;
+}
+
+/* Start of the header */
+
+header {
+    border-bottom: 3px solid #9cb34e;
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    box-shadow: 0 0 20px #000;
+}
+#logoContainer {
+    padding: 0;
+    width: 162.02px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header img {
+    width: 75px;
+    height: auto;
+}
+
+#title {
+    font-family: 'Yatra One', cursive;
+    font-size: 50px;
+    color: #fede9a;
+    -webkit-text-stroke: 0.2px #fff;
+    filter: drop-shadow(0 0 40px #fff);
+}
+
+#fccLink a {
+    font-size: 25px;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+#fccLink a:hover {
+    color: #fede9a;
+}
+
+/* End of the header */
+
+/* Start of the main */
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-family: 'Yatra One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#woodBorder {
+    border-top: 1px solid #fede9a;
+    border-bottom: 1px solid #555;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    background-image: url("photos/IMG_0179.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px #000;
+}
+
+#game {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000;
+    margin: 30px;
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #888;
+    background-image: url("photos/IMG_0178.PNG");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#controls,
+#stats {
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    -webkit-text-stroke: 0.5px #000000;
+    filter: drop-shadow(0 0 10px #000);
+    color: #fede9a;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+}
+
+.stat {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+button {
+    cursor: pointer;
+    color: #0a0a23;
+    font-family: 'Yatra One', cursive;
+    font-size: 20px;
+    /* background-color: #feac32;
+    background-image: linear-gradient(#9cb34e, #617058); */
+    background-image: url("photos/IMG_0180.PNG");
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+#text {
+    border: 1px solid #fede9a;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+#gameName {
+    color: red;
+}
+
+#text hr {
+    border-color: red;
+    background-color: red;
+}
+
+/* End of the main */
+
+/* Start of the footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    padding: 5px;
+    color: #fede9a;
+    font-family: 'Yatra One', cursive;
+    font-size: 20px;
+    text-align: center;
+}
