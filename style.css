@@ -51,6 +51,7 @@ header img {
 }
 
 #fccLink a {
+    font-family: sans-serif;
     font-size: 25px;
     color: #fefefe;
     text-decoration: none;
