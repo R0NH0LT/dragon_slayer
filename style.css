@@ -6,6 +6,7 @@
 
 body {
     width: 100%;
+    min-width: 320px;
     height: calc(100vh - 133px);
     background-color: #000000;
     background-image: url("photos/IMG_0181.webp");
@@ -28,6 +29,7 @@ header {
     color: #ffffff;
     box-shadow: 0 0 20px #000;
 }
+
 #logoContainer {
     padding: 0;
     width: 162.02px;
@@ -44,7 +46,7 @@ header img {
 
 #title {
     font-family: 'Yatra One', cursive;
-    font-size: 50px;
+    font-size: 6vh;
     color: #fede9a;
     -webkit-text-stroke: 0.2px #fff;
     filter: drop-shadow(0 0 40px #fff);
@@ -113,6 +115,7 @@ main {
     background-color: #0a0a23;
     color: #ffffff;
     padding: 10px;
+    scroll-behavior: smooth;
 }
 
 #controls,
@@ -184,3 +187,67 @@ footer {
     font-size: 20px;
     text-align: center;
 }
+
+/* End of the footer */
+
+
+
+/* START OF THE MEDIA */
+
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+        height: calc(100vh - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #title {
+        font-size: 3.5vh;
+        -webkit-text-stroke: none;
+    }
+    #fccLink,
+    #logoSignature {
+        display: none;
+    }
+
+    #woodBorder {
+        width: 100%;
+        background-position: center;
+    }
+
+    #game {
+        overflow: scroll;
+    }
+
+    #stats span {
+        font-size: 25px;
+    }
+
+    #controls button {
+        font-size: 16px;
+    }
+
+    #text {
+        font-size: 16px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+/* END OF THE MEDIA */
