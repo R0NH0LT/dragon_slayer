@@ -11,7 +11,7 @@ body {
     background-image: url("photos/IMG_0181.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 100px;
+    background-position: center 125px;
 }
 
 /* Start of the header */
@@ -88,6 +88,7 @@ main {
     height: auto;
     min-height: 395px;
     max-height: 400px;
+    padding: 30px;
     background-image: url("photos/IMG_0179.PNG");
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,9 +103,12 @@ main {
     border: 1px solid #000000;
     border-radius: 15px;
     box-shadow: 0 0 20px #000;
-    margin: 30px;
-    max-width: 500px;
-    max-height: 400px;
+    height: 100%;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #888;
     background-image: url("photos/IMG_0178.PNG");
     background-size: cover;
@@ -116,7 +120,8 @@ main {
 }
 
 #text {
-    background-color: #0a0a23;
+    height: 100%;
+    background-color: #000;
     color: #ffffff;
     padding: 10px;
     scroll-behavior: smooth;
@@ -125,6 +130,7 @@ main {
 #controls,
 #stats {
     border: 1px solid #0a0a23;
+    width: 100%;
     padding: 5px;
     -webkit-text-stroke: 0.5px #000000;
     filter: drop-shadow(0 0 10px #000);
@@ -176,16 +182,14 @@ button {
     border-color: red;
     background-color: red;
 }
-
 /* End of the main */
 
 /* Start of the footer */
-
 footer {
     width: 100%;
     height: auto;
     background-color: #000000;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     color: #fede9a;
@@ -195,6 +199,10 @@ footer {
 }
 
 /* End of the footer */
+
+
+
+
 
 
 
