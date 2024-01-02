@@ -20,7 +20,7 @@ body {
 header {
     border-bottom: 3px solid #9cb34e;
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #000000;
     padding: 15px 50px;
     display: flex;
@@ -68,8 +68,9 @@ header img {
 /* Start of the main */
 
 main {
+    border: 1px solid red;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 168px);
     padding: 10px;
     font-family: 'Yatra One', cursive;
     display: flex;
@@ -182,6 +183,8 @@ footer {
     height: auto;
     background-color: #000000;
     padding: 5px;
+    position: fixed;
+    bottom: 0;
     color: #fede9a;
     font-family: 'Yatra One', cursive;
     font-size: 20px;
@@ -194,10 +197,12 @@ footer {
 
 /* START OF THE MEDIA */
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-height: 600px) {
     body {
         width: 100%;
+        height: 100vh;
         min-width: 320px;
+        background-position: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -206,7 +211,12 @@ footer {
 
     header {
         width: 100%;
-        height: calc(100vh - 10px);
+        height: auto;
+        max-height: 100px;
+        padding: 10px 0;
+        margin: 0;
+        position: fixed;
+        top: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,12 +225,16 @@ footer {
     }
 
     #title {
-        font-size: 3.5vh;
+        font-size: 25px;
         -webkit-text-stroke: none;
     }
     #fccLink,
     #logoSignature {
         display: none;
+    }
+
+    main {
+        height: calc(100vh - 143px);
     }
 
     #woodBorder {
@@ -233,20 +247,21 @@ footer {
     }
 
     #stats span {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #controls button {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     #text {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     footer {
         position: fixed;
         bottom: 0;
+        font-size: 16px;
     }
 }
 
